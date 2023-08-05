@@ -1,5 +1,5 @@
 [package]
-name = "next stack"
+name = "nextstack"
 version = "0.1.0"
 edition = "2021"
 publish = false
@@ -18,4 +18,4 @@ vercel_runtime = "1.0.2"
 
 [[bin]]
 name = "rust"
-path = "src/fn/pi.rs"
+path = "api/rust.rs"

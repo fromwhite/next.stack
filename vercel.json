@@ -1,7 +1,12 @@
 {
   "functions": {
-    "src/fn/**/*.rs": {
+    "api/**/*.rs": {
       "runtime": "vercel-rust@4.0.2"
+    }
+  },
+  "build": {
+    "env": {
+      "GO_BUILD_FLAGS": "-ldflags '-s -w'"
     }
   }
 }

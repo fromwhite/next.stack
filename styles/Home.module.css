@@ -38,15 +38,67 @@
   font-weight: 700;
   font-family: var(--font-mono);
 }
+
+.button {
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 4px 5px;
+  background: transparent;
+  box-shadow: none;
+  opacity: 0.65;
+  border: 1px solid rgba(var(--card-border-rgb), 0.65);
+}
+
+.progress {
+  cursor: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    rgb(109, 158, 231) 12.5%,
+    rgb(173, 191, 227) 26.04%,
+    rgb(240, 201, 180) 39.06%,
+    rgb(244, 186, 110) 56.96%,
+    rgb(255, 193, 120) 70.83%,
+    rgb(229, 131, 52) 92.71%
+  );
+}
+
 .grid {
   display: flex;
   flex-direction: row;
-  align-content: space-around;
-  justify-content: space-around;
+  align-content: center;
+  justify-content: center;
   flex-wrap: wrap;
-  min-height: calc(100vh - 20px - 70.4px);
+  min-height: calc(100vh - 20px - 80px);
   width: var(--max-width);
   max-width: 100%;
+  position: relative;
+}
+
+.grid::after,
+.grid::before {
+  content: "";
+  left: 50%;
+  top: 30%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+
+.grid::before {
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 480px;
+  height: 360px;
+  margin-left: -400px;
+}
+
+.grid::after {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
 }
 
 .card {
@@ -200,8 +252,8 @@
   .grid {
     display: flex;
     flex-direction: row;
-    align-content: space-around;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     min-height: calc(100vh - 200px - 70.4px);
     margin-bottom: 180px;

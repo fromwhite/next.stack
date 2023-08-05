@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "run": "concurrently -k -p \"[{name}]\" -n \"Next.js,Vercel CLI \" -c \"white.bold,cyan.bold\" \"next dev\" \"vercel dev --yes\""
   },
   "dependencies": {
     "@types/node": "20.4.6",
@@ -16,8 +17,10 @@
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
+    "random": "^4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "shishua": "^1.0.4",
     "typescript": "5.1.6"
   },
   "devDependencies": {
