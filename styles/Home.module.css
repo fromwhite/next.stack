@@ -45,7 +45,7 @@
   padding: 4px 5px;
   background: transparent;
   box-shadow: none;
-  opacity: 0.65;
+  opacity: 0.85;
   border: 1px solid rgba(var(--card-border-rgb), 0.65);
 }
 
@@ -135,7 +135,7 @@
 
 .card p {
   margin: 0;
-  opacity: 0.6;
+  opacity: 0.9;
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 34ch;
