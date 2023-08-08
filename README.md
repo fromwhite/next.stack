@@ -14,7 +14,7 @@ Check out [Serverless Functions Overview | Vercel Docs](https://vercel.com/docs/
 <br> 
 <br>
 
-![cover](./snapshot/2023-8-5.png)
+![cover](./public/snapshot/2023-8-5.png)
 
 ## Deploy on Vercel
 

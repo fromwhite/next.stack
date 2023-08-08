@@ -8,5 +8,8 @@
     "env": {
       "GO_BUILD_FLAGS": "-ldflags '-s -w'"
     }
+  },
+  "github": {
+    "silent": true
   }
 }

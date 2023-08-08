@@ -1,6 +1,5 @@
 import random from "random";
 import shishua from "shishua";
-
 import type { NextApiRequest, NextApiResponse } from "next";
 
 interface Data {

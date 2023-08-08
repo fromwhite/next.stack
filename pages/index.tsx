@@ -86,10 +86,11 @@ export default function Home() {
               .join(" ")
               .trim()}
             onClick={async () => {
+              if (loading) return;
               setLoading(true);
               try {
                 resultSet.forEach((f) => f(null));
-                Promise.all(
+                await Promise.all(
                   FN.map(async (fn, index) => {
                     const set = resultSet[index];
                     const response = await fetch(fn);
@@ -109,7 +110,7 @@ export default function Home() {
         </p>
         <div className={inter.className}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://vercel.com/new/clone?repository-url=https://github.com/fromwhite/next.stack&project-name=next_stack&repository-name=next.stack"
             target="_blank"
             rel="noopener noreferrer"
           >
