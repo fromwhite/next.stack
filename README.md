@@ -1,4 +1,4 @@
-# next.stack
+# stack
 
 Proof of concept for building app with multiple serverless function on vercel
 
@@ -24,11 +24,11 @@ Check out [Serverless Functions Overview | Vercel Docs](https://vercel.com/docs/
 <br> 
 <br>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/fromwhite/next.stack&project-name=next_stack&repository-name=next.stack)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/fromwhite/stack&project-name=stack&repository-name=stack)
 
 Or
 
-<a href="https://github.com/fromwhite/next.stack/fork">
+<a href="https://github.com/fromwhite/stack/fork">
   <img src="https://github.com/fluidicon.png" alt="GitHub Logo" width="30"  >
 </a>
 <br> 
