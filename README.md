@@ -37,6 +37,4 @@ Or
 <br> 
 <br>
 
-Develop and test it, and then deploy it yourself
-
 Check out [Deploying GitHub Projects with Vercel](https://vercel.com/docs/concepts/deployments/git/vercel-for-github) for more details.
