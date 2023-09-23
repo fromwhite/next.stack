@@ -19,9 +19,12 @@ Check out [Serverless Functions Overview | Vercel Docs](https://vercel.com/docs/
 ## Deploy on Vercel
 
 <div style=" color: #FFA500; padding: 10px;">
-  <strong> ⚠️ NOTICE:</strong> Before deploying, it is essential to implement proper security restrictions, such as access authorization and request rate limiting
+<!--   <strong> ⚠️ NOTICE:</strong>  -->
+ WASM will not be updated, and the test code has no correlation.
+ 
+ [The reason for the directory( /api, /pages/api, /fn )](https://github.com/orgs/vercel/discussions/3495) is to find a way to combine multiple serverless functions, and I am still trying and waiting for more possibilities.
+ 
 </div>
-<br> 
 <br>
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/fromwhite/stack&project-name=stack&repository-name=stack)
