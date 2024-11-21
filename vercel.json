@@ -6,10 +6,12 @@
   },
   "build": {
     "env": {
-      "GO_BUILD_FLAGS": "-ldflags '-s -w'"
+      "GO_BUILD_FLAGS": "-ldflags '-s -w'",
+      "npm_config_build_from_source": "false"
     }
   },
   "github": {
     "silent": true
-  }
+  },
+  "installCommand": "npm install --ignore-scripts"
 }
