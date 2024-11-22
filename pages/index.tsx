@@ -110,7 +110,7 @@ export default function Home() {
         </p>
         <div className={inter.className}>
           <a
-            href="https://vercel.com/new/clone?repository-url=https://github.com/fromwhite/next.stack&project-name=next_stack&repository-name=next.stack"
+            href="https://vercel.com/new/clone?repository-url=https://github.com/fromwhite/stack&project-name=stack&repository-name=stack"
             target="_blank"
             rel="noopener noreferrer"
           >
