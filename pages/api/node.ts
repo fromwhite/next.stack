@@ -1,12 +1,24 @@
-import random from "random";
-import shishua from "shishua";
 import type { NextApiRequest, NextApiResponse } from "next";
+import crypto from 'crypto';
 
 interface Data {
   runtime: "Node";
   message: string;
   time: string;
   pi: number;
+}
+
+function createRandom(seed: number) {
+  const getRandomInt = (min: number, max: number) => {
+    const range = max - min + 1;
+    const bytes = crypto.randomBytes(4);
+    const value = bytes.readUInt32LE(0);
+    return min + (value % range);
+  };
+
+  return {
+    int: getRandomInt
+  };
 }
 
 export default function handler(
@@ -16,8 +28,7 @@ export default function handler(
   const t0 = performance.now();
 
   const seed = Math.floor(Date.now() / 1000);
-
-  random.use(shishua(seed));
+  const random = createRandom(seed);
 
   const radius = 424242;
   const loops = 1_000_000;
