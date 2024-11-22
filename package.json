@@ -20,7 +20,8 @@
     "random": "^4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "shishua": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
